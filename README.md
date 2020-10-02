@@ -14,8 +14,8 @@ Create your very first pull request to any public repository on GitHub and contr
 ## How to contribute to this project
 
 * Fork this repository, Create your own branch.     
-* Create a 'Hello World' program in your favorite language.      
-* Create a folder with your own name and add the 'Hello World' script in this folder.     
+* Create a program in your favorite language. It can be anything: Implementation of an Algorithm / Datastructure or even any basic problem that you solved.    
+* Create a folder with your own name and add the code in this folder.     
 * Send a Pull Request.     
 
 ## Reference Links     
