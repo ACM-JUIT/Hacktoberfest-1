@@ -1,3 +1,7 @@
+/* This program is written to find the product of digits of a number which is entered by the user
+   Created by Ansh Agrawal
+   Created on 2/10/2020
+   */
 #include<stdio.h>
 int main()
 {
