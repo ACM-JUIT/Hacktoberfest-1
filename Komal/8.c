@@ -1,3 +1,4 @@
+/*This program is to print the product of the digits of the number entered by the user*/
 #include<stdio.h>
 int main()
 {
