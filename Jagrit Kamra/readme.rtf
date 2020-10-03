@@ -1,0 +1,66 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2573
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 ProductSans-Regular;\f1\fnil\fcharset0 Avenir-Book;}
+{\colortbl;\red255\green255\blue255;\red25\green28\blue31;\red146\green11\blue36;\red52\green52\blue52;
+\red246\green247\blue249;\red228\green231\blue235;}
+{\*\expandedcolortbl;;\cssrgb\c12941\c14510\c16078;\cssrgb\c64706\c10980\c18824;\cssrgb\c26667\c26667\c26667;
+\cssrgb\c97255\c97647\c98039;\cssrgb\c91373\c92549\c93725;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\b\fs96 \cf2 \expnd0\expndtw0\kerning0
+Readability-
+\f1\b0\fs32 \
+\
+
+\f0\fs48 A Quick look
+\f1\fs32  
+\f0\b\fs48 -
+\f1\b0\fs32 \
+ A small program named readability which determines the reading level of a certain Paragraph based on the Coleman-Liau Index\
+\
+\
+
+\f0\fs48 A Brief Overview -
+\f1\fs32 \
+\
+According to {\field{\*\fldinst{HYPERLINK "https://www.scholastic.com/teachers/teaching-tools/collections/guided-reading-book-lists-for-every-level.html"}}{\fldrslt \cf3 Scholastic}}, E.B. White\'92s \'93Charlotte\'92s Web\'94 is between a second and fourth grade reading level, and Lois Lowry\'92s \'93The Giver\'94 is between an eighth grade reading level and a twelfth grade reading level. What does it mean, though, for a book to be at a \'93fourth grade reading level\'94?\
+Well, in many cases, a human expert might read a book and make a decision on the grade for which they think the book is most appropriate. But you could also imagine an algorithm attempting to figure out what the reading level of a text is.\
+So what sorts of traits are characteristic of higher reading levels? Well, longer words probably correlate with higher reading levels. Likewise, longer sentences probably correlate with higher reading levels, too. A number of \'93readability tests\'94 have been developed over the years, to give a formulaic process for computing the reading level of a text.\
+One such readability test is the Coleman-Liau index. The Coleman-Liau index of a text is designed to output what (U.S.) grade level is needed to understand the text. The formula is:\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf4 \cb5 index = 0.0588 * L - 0.296 * S - 15.8\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \cb1 Here, 
+\fs28 \cb6 L
+\fs32 \cb1  is the average number of letters per 100 words in the text, and 
+\fs28 \cb6 S
+\fs32 \cb1  is the average number of sentences per 100 words in the text.\
+Written below is a program called 
+\fs28 \cb6 readability
+\fs32 \cb1  that takes a text and determines its reading level. For example, if user types in a line from Dr. Seuss:\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf4 \cb5 $ ./readability\
+Text: Congratulations! Today is your day. You're off to Great Places! You're off and away!\
+Grade 3\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \cb1 The text the user inputted has 65 letters, 4 sentences, and 14 words. 65 letters per 14 words is an average of about 464.29 letters per 100 words. And 4 sentences per 14 words is an average of about 28.57 sentences per 100 words. Plugged into the Coleman-Liau formula, and rounded to the nearest whole number, we get an answer of 3: so this passage is at a third grade reading level.\
+Let\'92s try another one:\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf4 \cb5 $ ./readability\
+Text: Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard.\
+Grade 5\
+\pard\pardeftab720\partightenfactor0
+
+\fs32 \cf2 \cb1 This text has 214 letters, 4 sentences, and 56 words. That comes out to about 382.14 letters per 100 words, and 7.14 sentences per 100 words. Plugged into the Coleman-Liau formula, we get a fifth grade reading level.\
+As the average number of letters and words per sentence increases, the Coleman-Liau index gives the text a higher reading level. If you were to take this paragraph, for instance, which has longer words and sentences than either of the prior two examples, the formula would give the text an eleventh grade reading level.\
+\pard\pardeftab720\partightenfactor0
+
+\fs28 \cf4 \cb5 $ ./readability\
+Text: As the average number of letters and words per sentence increases, the Coleman-Liau index gives the text a higher reading level. If you were to take this paragraph, for instance, which has longer words and sentences than either of the prior two examples, the formula would give the text an eleventh grade reading level.\
+Grade 11}
