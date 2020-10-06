@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+#include<string.h>
+
+main()
+{
+  int num, q=1,r=1,sum=0,s, temp;
+
+  printf("enter value of num=") ;
+  scanf("%d",&num) ;
+  temp=num;
+  while(q!=0)
+{
+  q=num/10;
+  r=num%10;
+  s=r*r*r;
+  num=q;
+  sum=sum+s;
+}
+  if (sum==temp)
+  printf("num is Armstrong");
+  else
+  printf("num is not Armstrong");
+  getch();
+} 
